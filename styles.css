@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main Styles */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section Styles */
+section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Form Styles */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select, input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #005f8d;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Result Styles */
+#result, #savedGPAs {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  section {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Course Input Styles */
+.course-input {
+  margin-bottom: 10px;
+}
+
+.course-input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.course-input input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

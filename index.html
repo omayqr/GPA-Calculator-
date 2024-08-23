@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GPA Calculator</h1>
+    </header>
+    <main>
+        <section>
+            <label for="level">Select Level:</label>
+            <select id="level">
+                <option value="">Select Level</option>
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+                <option value="4">Level 4</option>
+                <option value="5">Level 5</option>
+                <option value="6">Level 6</option>
+            </select>
+
+            <label for="semester">Select Semester:</label>
+            <select id="semester">
+                <option value="">Select Semester</option>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+            </select>
+
+            <div id="coursesContainer"></div>
+
+            <button id="calculateBtn">Calculate GPA</button>
+            <button id="saveSemesterBtn" disabled>Save Semester GPA</button>
+            <button id="calculateOverallBtn" disabled>Calculate Overall GPA</button>
+            <button id="resetBtn">Reset All</button>
+
+            <div id="manualGPAContainer" style="display: none;">
+                <label for="manualGPA">Enter Final GPA:</label>
+                <input type="number" id="manualGPA" min="0" max="100" step="0.01">
+                <button id="saveManualGPABtn">Save Final GPA</button>
+            </div>
+
+            <div id="result"></div>
+            <div id="savedGPAs"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© @Omay4qr☆</p>
+        <a href="https://alawlaqy.blogspot.com" target="_blank">alawlaqy.blogspot.com</a>
+        <a href="whatsapp://send?text=message_text&phone=967777908359">Send Whatsapp" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.facebook.com/Omay4qr" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://t.me/omay4qr" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram">
+        </a>
+        <a href="https://www.instagram.com/omar4qr" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+        </a>
+        <button id="exitBtn">Exit</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
